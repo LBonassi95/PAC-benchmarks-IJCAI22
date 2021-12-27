@@ -1,0 +1,38 @@
+; Compilation CPU-time: 0.000 seconds
+(define (problem grounded-STRIPS-OS-SEQUENCEDSTRIPS-SMALL-4)
+(:domain grounded-STRIPS-OPENSTACKS-SEQUENCEDSTRIPS)
+
+(:objects noobjects)
+(:init
+(NOT-MADE-P1)
+(NOT-MADE-P2)
+(NOT-MADE-P3)
+(NOT-MADE-P4)
+(NOT-MADE-P5)
+(WAITING-O5)
+(WAITING-O4)
+(WAITING-O3)
+(WAITING-O2)
+(WAITING-O1)
+(STACKS-AVAIL-N0)
+(MACHINE-AVAILABLE)
+)
+
+
+ (:goal (and (shipped-o5)
+(shipped-o4)
+(shipped-o3)
+(shipped-o2)
+(shipped-o1)
+(always (or (not (and (stacks-avail-n0) (next (stacks-avail-n1)) (or (shipped-o1) (next (not (shipped-o1)))) (or (shipped-o2) (next (not (shipped-o2)))) (or (shipped-o3) (next (not (shipped-o3)))) (or (shipped-o4) (next (not (shipped-o4)))) (or (shipped-o5) (next (not (shipped-o5)))))) (next (next (stacks-avail-n0)))))
+(always (or (not (and (stacks-avail-n1) (next (stacks-avail-n2)) (or (shipped-o1) (next (not (shipped-o1)))) (or (shipped-o2) (next (not (shipped-o2)))) (or (shipped-o3) (next (not (shipped-o3)))) (or (shipped-o4) (next (not (shipped-o4)))) (or (shipped-o5) (next (not (shipped-o5)))))) (next (next (stacks-avail-n1)))))
+(always (or (not (and (stacks-avail-n2) (next (stacks-avail-n3)) (or (shipped-o1) (next (not (shipped-o1)))) (or (shipped-o2) (next (not (shipped-o2)))) (or (shipped-o3) (next (not (shipped-o3)))) (or (shipped-o4) (next (not (shipped-o4)))) (or (shipped-o5) (next (not (shipped-o5)))))) (next (next (stacks-avail-n2)))))
+(always (or (not (and (stacks-avail-n3) (next (stacks-avail-n4)) (or (shipped-o1) (next (not (shipped-o1)))) (or (shipped-o2) (next (not (shipped-o2)))) (or (shipped-o3) (next (not (shipped-o3)))) (or (shipped-o4) (next (not (shipped-o4)))) (or (shipped-o5) (next (not (shipped-o5)))))) (next (next (stacks-avail-n3)))))
+(always (or (not (and (stacks-avail-n4) (next (stacks-avail-n5)) (or (shipped-o1) (next (not (shipped-o1)))) (or (shipped-o2) (next (not (shipped-o2)))) (or (shipped-o3) (next (not (shipped-o3)))) (or (shipped-o4) (next (not (shipped-o4)))) (or (shipped-o5) (next (not (shipped-o5)))))) (next (next (stacks-avail-n4)))))
+(always (or (not (machine-configured-p1)) (next (made-p1))))
+(always (or (not (machine-configured-p2)) (next (made-p2))))
+(always (or (not (machine-configured-p3)) (next (made-p3))))
+(always (or (not (machine-configured-p4)) (next (made-p4))))
+(always (or (not (machine-configured-p5)) (next (made-p5)))))) 
+
+)
